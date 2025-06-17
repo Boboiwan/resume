@@ -168,3 +168,14 @@ iframe {
     margin: 0 5px;
   }
 }
+
+.navbar .nav-links .nav-btn.cv {
+  background-color: #00adb5;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar .nav-links .nav-btn.cv:hover {
+  background-color: #007c85;
+}
+
