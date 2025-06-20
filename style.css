@@ -179,3 +179,83 @@ iframe {
   background-color: #007c85;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.gallery img {
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(187, 111, 111, 0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.biodata-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.biodata-table th,
+.biodata-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ce2d2d;
+}
+
+.biodata-table th {
+  width: 200px;
+  background-color: #cba3a3;
+  color: #333;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.gallery img,
+.gallery video {
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover,
+.gallery video:hover {
+  transform: scale(1.05);
+}
+
+.custom-skill-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-skill-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.custom-skill-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2cbfc7;
+  font-weight: bold;
+}
+
