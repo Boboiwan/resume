@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ridzwan's Resume</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="resume1.css" />
 </head>
 <body>
 
@@ -12,20 +12,25 @@
 <nav class="navbar">
   <div class="logo">My Resume</div>
 <ul class="nav-links">
-  <li><a href="#" onclick="loadSection('about')" class="nav-btn">About Me</a></li>
-  <li><a href="#" onclick="loadSection('experience')" class="nav-btn">Experience</a></li>
-  <li><a href="#" onclick="loadSection('location')" class="nav-btn">Location</a></li>
+  <li><a href="#" onclick="scrollToSection('about')" class="nav-btn">About Me</a></li>
+  <li><a href="#" onclick="scrollToSection('biodata')" class="nav-btn">Biodata</a></li>
+  <li><a href="#" onclick="scrollToSection('experience')" class="nav-btn">Experience</a></li>
+  <li><a href="#" onclick="scrollToSection('skills')" class="nav-btn">My Skills</a></li>
+  <li><a href="#" onclick="scrollToSection('location')" class="nav-btn">Location</a></li>
+  <li><a href="#" onclick="scrollToSection('gallery')" class="nav-btn">Gallery</a></li>
+  <li><a href="#" onclick="scrollToSection('favorite-moment')" class="nav-btn">Favorite Moment</a></li>
   <li><a href="mailto:2023135265@student.uitm.edu.my" class="nav-btn">Email Me</a></li>
   <li><a href="https://wa.me/60105150255" target="_blank" class="nav-btn">WhatsApp</a></li>
- <li><a href="Resume.pdf" class="nav-btn" download target="_blank">Download CV</a></li>
-
+  <li><a href="Resume.pdf" class="nav-btn" download target="_blank">Download CV</a></li>
 </ul>
 
+<!-- 🕒 Clock -->
+  <div class="clock" id="clock"></div>
 </nav>
 
 
-
-  <!-- Main Container -->
+</nav>
+<!-- Main Container -->
   <div class="container">
     <header>
       <img src="C:\Users\muhdr\OneDrive\Pictures\resume picture.jpg" alt="Profile Picture" class="profile-img" />
@@ -46,31 +51,96 @@
 
     <!-- ✅ Biodata Section -->
   <section id="biodata">
-    <h2>Biodata</h2>
-    <ul>
-      <li><strong>Name:</strong> Muhammad Ridzwan Bin Abdullah Maliki</li>
-      <li><strong>Age:</strong> 21</li>
-      <li><strong>Date of Birth:</strong> 29 August 2004</li>
-      <li><strong>Place of Birth:</strong> Hospital Besar Melaka</li>
-    </ul>
-  </section>
+  <h2>Biodata</h2>
+  <table class="biodata-table">
+    <tr>
+      <th>Full Name</th>
+      <td>Muhammad Ridzwan Bin Abdullah Maliki</td>
+    </tr>
+    <tr>
+      <th>Age</th>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th>Date of Birth</th>
+      <td>29 August 2004</td>
+    </tr>
+    <tr>
+      <th>Place of Birth</th>
+      <td>Hospital Besar Melaka</td>
+    </tr>
+    <tr>
+      <th>Gender</th>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <th>Nationality</th>
+      <td>Malaysian</td>
+    </tr>
+    <tr>
+      <th>Religion</th>
+      <td>Islam</td>
+    </tr>
+    <tr>
+      <th>Race</th>
+      <td>Malay</td>
+    </tr>
+    <tr>
+      <th>Marital Status</th>
+      <td>Single</td>
+    </tr>
+    <tr>
+      <th>Address</th>
+      <td>Dt 2924, Jalan Kenari Jaya 3, Taman Kenari Jaya, Durian Tunggal, 76100, Melaka</td>
+    </tr>
+    <tr>
+      <th>Phone</th>
+      <td>+60105150255</td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td>2023135265@student.uitm.edu.my</td>
+    </tr>
+  </table>
+</section>
+
 
     <section id="experience">
-      <h2>Work Experience</h2>
-      <h3>Promoter – Pallas Sdn. Bhd. (1 February 2022)</h3>
-      <ul>
+  <h2>Work Experience</h2>
+
+  <!-- Unordered List: Jobs -->
+  <ul>
+    <li>
+      <strong>Promoter – Pallas Sdn. Bhd. (1 February 2022)</strong>
+      <ol>
         <li>Handled payments at checkout</li>
         <li>Resolved customer complaints</li>
         <li>Managed daily transaction records</li>
-      </ul>
-
-      <h3>Promoter – OPPO Sdn. Bhd. (22 June 2022)</h3>
-      <ul>
+      </ol>
+    </li>
+    <li>
+      <strong>Promoter – OPPO Sdn. Bhd. (22 June 2022)</strong>
+      <ol>
         <li>Provided product information to customers</li>
-        <li>Worked with team on marketing strategies</li>
+        <li>Worked with the team on marketing strategies</li>
         <li>Resolved customer issues quickly</li>
-      </ul>
-    </section>
+      </ol>
+    </li>
+  </ul>
+</section>
+
+<!-- ✅ My Skills Section -->
+<section id="skills">
+  <h2>My Skills</h2>
+  <ul class="custom-skill-list">
+    <li>✔ Teamwork</li>
+    <li>✔ Communication</li>
+    <li>✔ Time Management</li>
+    <li>✔ Problem Solving</li>
+    <li>✔ Adaptability</li>
+  </ul>
+</section>
+
 
     <section id="location">
   <h2>My Location</h2>
@@ -82,6 +152,34 @@
   </iframe>
 </section>
 
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="C:\Users\muhdr\OneDrive\Pictures\Saved Pictures\gambar1.jpg" alt="Gallery Image 1">
+    <img src="C:\Users\muhdr\OneDrive\Pictures\Saved Pictures\gambar2.jpg" alt="Gallery Image 2">
+    <img src="C:\Users\muhdr\OneDrive\Pictures\Saved Pictures\gambar3.jpg" alt="Gallery Image 3">
+  <!-- Your video -->
+    <section id="favorite-moment">
+  <h2>My Favorite Moment</h2>
+  <div class="gallery">
+  <video controls>
+      <source src="C:\Users\muhdr\Videos\vid1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video controls>
+      <source src="C:\Users\muhdr\Videos\vid2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video controls>
+      <source src="C:\Users\muhdr\Videos\vid3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+</div>
+</section>
+
+
   </div>
 
   <script>
@@ -92,6 +190,21 @@
   <footer>
     &copy; 2025 Muhammad Ridzwan Bin Abdullah Maliki 
   </footer>
-sss
+
+<script>
+  function updateClock() {
+    const clock = document.getElementById("clock");
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    clock.textContent = `${hours}:${minutes}:${seconds}`;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock(); // run once on load
+</script>
+
+
 </body>
 </html>
