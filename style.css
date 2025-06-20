@@ -258,4 +258,11 @@ iframe {
   color: #2cbfc7;
   font-weight: bold;
 }
+.clock {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #00adb5;
+  text-align: center;
+  font-weight: bold;
+}
 
