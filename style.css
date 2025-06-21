@@ -1,0 +1,538 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+  background-color: #45a049; /* warna hover */
+  transform: scale(1.05);     /* besarkan sedikit bila hover */
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+section {
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+ul {
+  list-style-position: inside;
+  display: inline-block;
+  text-align: left;
+}
+
+.profile-section {
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4CAF50;
+  margin-bottom: 20px;
+}
+
+.biodata-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 700px;
+  background-color: #f2f2f2;
+}
+
+.biodata-table th,
+.biodata-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+.biodata-table th {
+  background-color: #4CAF50;
+  color: white;
+  width: 30%;
+}
+
+/* Animation: fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Styling for biodata table */
+.biodata-table {
+  margin: 30px auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 700px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+}
+
+.biodata-table th,
+.biodata-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+.biodata-table th {
+  background-color: #4CAF50;
+  color: white;
+  width: 30%;
+}
+
+/* Hover effect untuk keseluruhan row dalam table */
+.biodata-table tr:hover {
+  background-color: #d0f0c0; /* Warna hijau lembut bila hover */
+  transition: background-color 0.3s ease;
+}
+
+/* Opsyenal: tukar warna teks juga semasa hover */
+.biodata-table tr:hover td,
+.biodata-table tr:hover th {
+  color: #000000;
+}
+
+/* Table styling */
+.edu-table {
+  margin: 30px auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 900px;
+  font-size: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  animation: slideFadeIn 1.2s ease-in-out both;
+}
+
+.edu-table th,
+.edu-table td {
+  border: 1px solid #ddd;
+  padding: 14px 18px;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.edu-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.edu-table tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+/* Elegant slide + fade animation */
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-fade {
+  animation: slideFadeIn 1.2s ease;
+}
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.contact-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  max-width: 300px;
+  flex: 1 1 250px;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.contact-icon {
+  font-size: 40px;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.contact-card a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* Animasi slide-fade */
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-fade {
+  animation: slideFadeIn 1s ease both;
+}
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;      /* ✅ Tengah secara mendatar */
+  align-items: center;          /* ✅ Tengah secara menegak */
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.contact-icon {
+  font-size: 40px;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.contact-card a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* Animasi slide-fade */
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-fade {
+  animation: slideFadeIn 1s ease both;
+}
+
+.contact-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* ✅ Hover Effect – Naikkan dan besarkan sikit */
+.contact-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.skills-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  justify-items: center;
+}
+
+.skill-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  width: 100%;
+  max-width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  animation: fadeUp 0.8s ease both;
+}
+
+.skill-card i {
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: block;
+  color: #4CAF50;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  background-color: #f1fff1;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+/* Animasi muncul dari bawah */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skills-grid-center {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.experience-section {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+.experience-card h2 {
+  color: #4CAF50;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.experience-card p {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.experience-card ol,
+.experience-card ul {
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.experience-card li {
+  margin-bottom: 6px;
+}
+
+/* Animasi slide fade */
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-fade {
+  animation: slideFadeIn 1s ease both;
+}
+
+.my-space-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.media-item {
+  width: 100%;
+  max-width: 250px;
+  height: 160px; /* Tetapkan tinggi konsisten */
+  object-fit: cover; /* Potong & isi ruang supaya tak herot */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.download-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.download-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-3px);
+}
+
+.download-btn i {
+  margin-right: 8px;
+}
+
+/* ===== Feedback Form Section ===== */
+.feedback-section {
+  background-color: #e8eaf6;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.feedback-section h2 {
+  color: #1a237e;
+  margin-bottom: 20px;
+}
+
+.feedback-section form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-section input,
+.feedback-section textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.feedback-section button {
+  background-color: #1a237e;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-section button:hover {
+  background-color: #3949ab;
+}

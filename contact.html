@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<script>
+  function submitFeedback() {
+    alert("✅ Thank you for your feedback!");
+    document.getElementById("feedback-form").reset();
+    return false; // Prevent actual form submission
+  }
+</script>
+<body>
+
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="space.html">My Space</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <div class="contact-card animate-slide-fade">
+      <i class="fas fa-phone-alt contact-icon"></i>
+      <h3>Phone</h3>
+      <p><a href="tel:+60105150255">+60105150255</a></p>
+    </div>
+
+    <div class="contact-card animate-slide-fade">
+      <i class="fas fa-envelope contact-icon"></i>
+      <h3>Email</h3>
+      <p><a href="mailto:2023135265@student.uitm.edu.my">2023135265@student.uitm.edu.my</a></p>
+    </div>
+
+    <div class="contact-card animate-slide-fade">
+      <i class="fas fa-map-marker-alt contact-icon"></i>
+      <h3>Location</h3>
+      <p>DT 2924, Jalan Kenari Jaya 3,<br>Taman Kenari Jaya, 76100 Melaka</p>
+    </div>
+  </section>
+
+  <a href="https://instagram.com/ridzwan.maliki" target="_blank">
+  <i class="fab fa-instagram fa-2x"></i>
+</a>
+
+
+  <section>
+    <h2>My Location on Map</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15931.148529254066!2d102.2865721!3d2.3084776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1ee3cb1c547fd%3A0x7c7396d87acfe889!2sTaman%20Kenari%20Jaya%2C%20Durian%20Tunggal%2C%20Melaka!5e0!3m2!1sen!2smy!4v1718948765973!5m2!1sen!2smy"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Feedback Section -->
+<section class="feedback-section">
+  <h2>📬 Submit Feedback</h2>
+  <form id="feedback-form" onsubmit="return submitFeedback();">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="4" placeholder="Your Message..." required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+</body>
+</html>
